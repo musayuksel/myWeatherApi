@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  color: black;
+}
+
+/* Header styles */
+header {
+  background: linear-gradient(#1f1515, #000000);
+  box-shadow: 2px 5px 6px 2px rgba(110, 110, 110, 0.527);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 1rem;
+}
+#countrySelect {
+  background-color: #fff;
+  border: none;
+  border-radius: 18px;
+  color: #056272;
+  cursor: pointer;
+  padding: 10px;
+}
+#countrySelect:focus {
+  outline: none;
+}
+main {
+  background: #e7e7e7;
+  height: 100%;
+}
+#weatherCardContainer {
+  background: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    " cityName "
+    "degreAll  "
+    "weatherText";
+  justify-items: center;
+  align-items: center;
+  padding: 1rem;
+}
+#cityName {
+  grid-area: cityName;
+}
+#icon {
+  grid-area: icon;
+}
+#degAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: degreAll;
+}
+#degAll img {
+  height: 6rem;
+}
+#deg {
+  font-size: 2rem;
+  font-weight: 600;
+}
+#weatherText {
+  grid-area: weatherText;
+}
+/* Footer Style */
+#footer {
+  background-color: #0cffa1;
+  border-top: 1px solid #ffbb00;
+  margin: 2rem 0 0;
+  padding: 4rem;
+  font-size: 2rem;
+  text-align: center;
+}
+#footer a {
+  color: #056272;
+  text-decoration: none;
+}
